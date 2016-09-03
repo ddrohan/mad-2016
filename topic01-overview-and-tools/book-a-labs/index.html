@@ -55,66 +55,78 @@ figcaption
   <div class="ui container">
     
 
+<style>
+  
 
-  <header class="ui middle aligned center aligned stackable grid segment">
-    <a class="ui blue left corner label">
-      <i class="sitemap big  icon"></i>
+code
+{
+  font-family: "Monaco";
+  font-size: 110%;
+}
+
+img
+{
+  padding:1px;
+  border:1px solid black;
+}
+
+h1
+{
+  font-style:italic;
+  font-size:130%;
+  border-bottom: thin solid black;
+}
+h2
+{
+  font-size:110%;
+  border-bottom: thin solid black;
+}
+h3
+{
+  font-size:100%;
+  border-bottom: thin solid black;
+}
+
+
+
+</style>
+
+<div class="ui fixed top pointing inverted menu labmenu">
+  <header class="header item">
+    <a href="../index.html">
+      <i class="sitemap icon"></i>
+      1: Overview & Tools
     </a>
-    <div class="eight wide center aligned column">
-      <h2 class="headder">    Mobile Application Development </h2>
-    </div>
-    <div class="one wide column sitemap">
-      <div class="popup" data-content="Top Level Topic View">
-        <a href="index.html"> <i class="big sitemap icon"></i>  topics </a>
-      </div>
-    </div>
-    <div class="one wide column">
-      <div class="popup" data-content="All Presentations">
-        <a href="talkwall.html"> <i class="big film icon"></i>  slides </a>
-      </div>
-    </div>
-    <div class="one wide column">
-      <div class="popup" data-content="All Labs">
-        <a href="labwall.html"> <i class="big lab icon"></i> labs </a>
-      </div>
-    </div>
-    <div class="five wide column">
-      <img class="ui centered medium image" src="http://www.wit.ie/assets/images/wit_crest.png">
-    </div>
   </header>
-
-<script>
-  $('.popup')
-  .popup()
-;
-</script>
-
-
-
-<div class="ui four doubling stackable cards">
-
-  
-  
-  <a class="ui raised link card" href="./topic01-overview-and-tools/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
-        <div class="header"> 1: Overview & Tools </div>
+  <div class="right tab-menu menu">
+    
+      <a class="item" data-tab="labs">
+        labs
+      </a>
+    
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="./topic01-overview-and-tools/talk-1-app-design/01.app.design.jpeg">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>Android introduced a new user interface language to the world, one that is gradually evolving in flexibility and expressiveness. The first application we will build exhibits range of new concepts you will not have come across before. Here we tour this app in detail, exploring each of the artifacts we have composed, and attempt to get a sense of how they fit together to form a running app.</p>
-
-      </div>
-    </div>
-  </a>
-
-  
-
 </div>
 
+<br><br>
+
+  
+  <div  class="ui tab segment lab" data-tab="labs">
+    <h1>CoffeeMate Labs</h1>
+<p><img src="img/coffeemate.png" alt="ddrohan.gitbooks.io - Labs"></p>
+<p>You can find all the labs for the module here at <a href="https://www.gitbook.com/book/ddrohan/mobile-app-dev-labs/details">ddrohan.gitbooks.io</a>.</p>
+
+  </div>
+ 
+
+
+<script>
+$('.ui.menu .item')
+  .tab({
+    history: true,
+    historyType: 'hash'
+  })
+;
+</script>
 
    </div>
 
